@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+body {
+    background: url('./background.jpg');
+    background-size: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container .mark img {
+    height: 10rem;
+    animation-name: marks;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+}
+
+.container .btn #btn{
+    position: relative;
+}
+.container p{
+    font-size: 1.3rem;
+    text-align: justify;
+    padding: 1rem;
+}
+.container p span{
+    color: red;
+    font-size: 1.52rem;
+    font-weight: bold;
+}
+
+@keyframes marks {
+    0% {
+        top: 1px;
+    }
+
+    50% {
+        /* top: 5px; */
+    }
+
+    100% {
+        top: 10px;
+    }
+}
+
+.button {
+    background: rgb(0, 191, 0);
+    color: white;
+    cursor: pointer;
+    padding: 0.71rem 2rem;
+    border-radius: 0.2rem;
+    margin: 1rem 0;
+    box-shadow: 0px 2px 10px black;
+    text-align: center;
+}
+
+.btn .button a {
+    text-decoration: none;
+    color: white;
+}
+
+.button:hover {
+    background-color: green;
+}
+
+.Nobutton {
+    background:rgb(255, 76, 76);
+    color: white;
+    cursor: pointer;
+    padding: 0.71rem 2rem;
+    border-radius: 0.2rem;
+    margin: 1rem 0;
+    box-shadow: 0px 2px 10px black;
+}
+
+.btn .Nobutton a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.Nobutton:hover {
+    background-color: red;
+}
+
+@media screen and (max-width:400px) {
+    * {
+        font-size: 12px;
+    }
+
+    body {
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+}
